@@ -20,7 +20,7 @@ public class Application {
         System.out.println("annotation config");
         return new MessageService() {
             public String getMessage() {
-                return "Hello World!";
+                return "Hello World!!";
             }
         };
     }
