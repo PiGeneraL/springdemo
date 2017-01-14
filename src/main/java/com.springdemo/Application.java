@@ -8,6 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 
 /**
  * Created by pigeneral on 2017/1/5.
@@ -32,6 +33,7 @@ public class Application {
         MessagePrinter printer = context.getBean(MessagePrinter.class);
         printer.printMessage();
 
+        System.out.println("beans:" + Arrays.toString(context.getBeanDefinitionNames()));
 
     }
 
